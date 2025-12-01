@@ -23,7 +23,7 @@ app.add_middleware(
 )
 
 # Load YOLO model
-model_path = r'C:\Users\Administrator\Documents\MiniByte\Solar_panel_2\weights\best.pt'
+model_path = r'C:\Users\Administrator\Documents\Solar_panel_2\weights\best.pt'
 model = YOLO(model_path)
 
 logging.basicConfig(level=logging.INFO)
@@ -60,3 +60,4 @@ async def read_index():
     return FileResponse(index_path)
 
 # Run the server with `uvicorn hapi:app --reload`
+
