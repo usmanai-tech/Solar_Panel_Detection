@@ -6,7 +6,7 @@ import numpy as np
 PATCH_SIZE = (256 , 256)
 
 # Load the YOLO model
-model_path = r'C:\Users\Administrator\Documents\MiniByte\Solar_panel_2\weights\best.pt'
+model_path = r'C:\Users\Administrator\Documents\Solar_panel_2\weights\best.pt'
 model = YOLO(model_path)
 
 # Function to process satellite image from a numpy array with dynamic confidence
@@ -77,3 +77,4 @@ def reconstruct_image_with_predictions(image, predictions, patch_size=PATCH_SIZE
                 draw.rectangle([x1, y1, x2, y2], outline="red", width=3)
 
     return reconstructed_image
+
